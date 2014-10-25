@@ -1,0 +1,37 @@
+<div style="float: left; font-size: larger">
+    <%= t('emailer_error.user') %>
+</div>
+<div style="height: 25px; padding-left: 120px; font-size: larger">
+    <b><%= @user %></b>
+</div>
+<div style="float: left; font-size: larger">
+    <%= t('emailer_error.status') %>
+</div>
+<div style="height: 25px; padding-left: 120px; font-size: larger">
+    <b><%= @status %></b>
+</div>
+<% if @exception %>
+	<div style="float: left; font-size: larger">
+	    <%= t('emailer_error.message') %>
+	</div>
+	<div style="height: 25px; padding-left: 120px; font-size: larger">
+	    <%= @exception.message %>
+	</div>
+<% end %>
+<div style="float: left; font-size: larger">
+    <%= t('emailer_error.url') %>
+</div>
+<div style="height: 25px; padding-left: 120px; font-size: larger">
+    <%= @url %>
+</div>
+<% if @exception %>
+	<div style="float: left; font-size: larger">
+	    <%= t('emailer_error.backtrace') %>
+	</div>
+	<div style="height: 25px; padding-left: 120px; font-size: larger">
+	    <%= @exception.backtrace %>
+	</div>
+<% end %>
+
+<div style="height: 200px">
+</div>
