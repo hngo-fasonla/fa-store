@@ -45,6 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'pg', group: :production
 # Test gems
 # gem 'nokogiri', '1.6.3.1'
 # sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install nokogiri -- --with-iconv-include=/usr/local/Cellar/libiconv/1.14/include --with-iconv-lib=/usr/local/Cellar/libiconv/1.14/lib
