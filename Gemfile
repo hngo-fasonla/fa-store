@@ -5,7 +5,8 @@ ruby '2.1.3'
 gem 'rails', '4.0.8'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -45,7 +46,6 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'pg', group: :production
 # Test gems
 # gem 'nokogiri', '1.6.3.1'
 # sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install nokogiri -- --with-iconv-include=/usr/local/Cellar/libiconv/1.14/include --with-iconv-lib=/usr/local/Cellar/libiconv/1.14/lib
