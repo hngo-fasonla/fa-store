@@ -1,10 +1,10 @@
 bundle install --without production
 #rails g spree:install --sample=false --seed=false
-rails g spree:install
-#In config/initializer/spree.rb: LegacyUser -> Usersp
+#rails g spree:install
+#In config/initializer/spree.rb: LegacyUser -> Users
 bundle exec rails g spree_admin_roles_and_access:install
 bundle exec rake spree_roles:permissions:populate
-#In vendor/assets/stylesheets/spree/frontend/:
+#In vendor/assets/stylesheets/spree/frontend/: (assets/javascripts)
 #Remove *= require store/spree_admin_roles_and_access
 #Remove *= require admin/spree_admin_roles_and_access
 #Remove //= require admin/spree_admin_roles_and_access
